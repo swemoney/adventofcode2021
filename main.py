@@ -1,6 +1,5 @@
 from importlib import import_module
 
-# tuple (day,part)
 DAY = 1
 PART = 2
 
