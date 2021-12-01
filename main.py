@@ -2,7 +2,7 @@ from importlib import import_module
 
 # tuple (day,part)
 DAY = 1
-PART = 1
+PART = 2
 
 def file_not_found(filename):
     print(f"Could not locate {filename}")
