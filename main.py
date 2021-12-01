@@ -16,7 +16,8 @@ except ImportError:
     
 try:
     with open(f"day/{DAY:02}/input.txt") as f:
-        data = [l.rstrip('\n') for l in f.readlines()]
+        input_data = [l.rstrip('\n') for l in f.readlines()]
+        data = puzzle.parse_input(input_data)
 except FileNotFoundError:
     file_not_found("input.txt")
 
