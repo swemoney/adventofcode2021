@@ -23,4 +23,6 @@ except FileNotFoundError:
 
 print(f"Running day {DAY}, part {PART}...")
 
-puzzle.run(data)
+result = puzzle.run(data)
+
+print(f"Result: {result}")
