@@ -1,6 +1,6 @@
 from importlib import import_module
 
-DAY = 7
+DAY = 8
 PART = 2
 
 def file_not_found(filename):
