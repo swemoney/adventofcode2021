@@ -1,7 +1,8 @@
 from importlib import import_module
+import time
 
 DAY = 12
-PART = 2
+PART = 1
 
 def file_not_found(filename):
     print(f"Could not locate {filename}")
@@ -20,8 +21,11 @@ try:
 except FileNotFoundError:
     file_not_found("input.txt")
 
-print(f"Running day {DAY}, part {PART}...")
+print(f"Running day {DAY}, part {PART}...", end=" ")
 
+start_time = time.time()
 result = puzzle.run(data)
+end_time = time.time()
 
-print(f"Result: {result}")
+print(f"Completed in {(end_time - start_time):0.5f} seconds")
+print(f"  - Result: {result}")
