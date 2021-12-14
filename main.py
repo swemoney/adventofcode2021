@@ -1,8 +1,13 @@
 from importlib import import_module
 import time
 
+<<<<<<< HEAD
 DAY = 12
 PART = 1
+=======
+DAY = 13
+PART = 2
+>>>>>>> 695e1c28fb7c94db656c198aad40c19aba044731
 
 def file_not_found(filename):
     print(f"Could not locate {filename}")
